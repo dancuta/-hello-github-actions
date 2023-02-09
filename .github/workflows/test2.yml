@@ -1,0 +1,15 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Ancuta - test2
+on:
+  workflow_dispatch: {}
+jobs:
+  build:
+    name: Ancuta - test2 - build step
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: Ancuta - test1 - checkout
+  
