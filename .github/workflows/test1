@@ -1,6 +1,6 @@
 name: [Ancuta - test1]
 on:
-  []
+  workflow_dispatch: []
 jobs:
   build:
     name: [Ancuta - test1] - build step
