@@ -11,18 +11,22 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
-     
-      - name: Ancuta - test1 - Maven setup
-        uses: stCarolas/setup-maven@v.4.5
-        with: 
-          maven-version: 3.8.2
-          
+               
       - name: Ancuta - test1 - Java setup
         uses: actions/setup-java@v2
         with:
             distribution: 'zulu'
             java-version: '8'
             server-id: maven
+            
+      - name: Ancuta - test1 - Maven setup
+        uses: stCarolas/setup-maven@v.4.5
+        with: 
+          maven-version: 3.8.2
+          
+      - name: Ancuta - test1 - BUILD
+        run: mvn clean install
+        
       
       
       
