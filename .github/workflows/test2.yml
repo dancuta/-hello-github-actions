@@ -11,5 +11,12 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
-      - name: Ancuta - test1 - checkout
+     
+      - name: Ancuta - test1 - Maven setup
+        uses: stCarolas/setup-maven@4.3
+        with: 
+          maven-version: 3.8.1
+          
+      
+
      
