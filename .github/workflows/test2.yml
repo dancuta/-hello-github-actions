@@ -12,19 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Ancuta - test1 - checkout
-      name: Ancuta - test1
-on:
-  workflow_dispatch: {}
-jobs:
-  build:
-    name: Ancuta - test1 - build step
-    
-    runs-on: ubuntu-latest
-    
-    steps:
-      - uses: actions/checkout@v2
-      - name: Ancuta - test1 - checkout
-      run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-  
+     
